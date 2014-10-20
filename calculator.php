@@ -10,7 +10,9 @@
 .carpet-choice > label{ /* LABELS */
 color: white;
 }
-
+.carpet-choice input[type=radio] {
+	visibility: hidden;
+}
 .carpet-choice > input + img{ /* IMAGE STYLES */
 cursor:pointer;
 border:3px solid transparent;
