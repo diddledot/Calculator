@@ -12,6 +12,7 @@ color: white;
 }
 .carpet-choice input[type=radio] {
 	visibility: hidden;
+	position: absolute;
 }
 .carpet-choice > input + img{ /* IMAGE STYLES */
 cursor:pointer;
