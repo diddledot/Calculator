@@ -82,6 +82,12 @@ border: 3px solid red;
 	<input type="submit" name="submit1" value="Continue">
 </form>
 <?php
+if(isset($_POST['submit1'])){
+  $carpet = stripslashes($_POST['carpet']);
+  if($_POST['stairs'] == 'Yes'){
+  }
+    
+} 
 ?>
 </body>
 </html>
