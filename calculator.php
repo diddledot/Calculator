@@ -5,15 +5,25 @@
 <title>Carpet Calculator</title>
 <style type="text/css">
 .carpet-choice > input{ /* HIDE RADIO */
-  visibility: hidden;
+
   position: absolute;
 }
+
+.carpet-choice > label{ /* LABELS */
+  position: absolute;
+  color: white;
+}
+
 .carpet-choice > input + img{ /* IMAGE STYLES */
   cursor:pointer;
-  border:2px solid transparent;
+  border:3px solid transparent;
 }
 .carpet-choice > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
   border:2px solid #f00;
+}
+
+.carpet-choice input[type="radio"]:checked + img {
+    border: 3px solid red;
 }
 </style>
 </head>
@@ -25,32 +35,32 @@
 <h3>Choose Carpet:</h3>
   <div class="carpet-choice">
     <label for="brown">Brown Carpet $2.99</label>
-    <input type="radio" name="brown" value="2.99" />
+    <input id="brown" type="radio" name="carpet" value="2.99" />
     <img src="brown.jpg" alt=""/>
   </div>
   <div class="carpet-choice">
   <label for="darkgrey">Dark Grey Carpet $3.99</label>
-    <input type="radio" name="darkgrey" value="3.99" />
+    <input id="darkgrey" type="radio" name="carpet" value="3.99" />
     <img src="darkgrey.jpg" alt=""/>
   </div>
   <div class="carpet-choice">
     <label for="grey">Light Grey Carpet $1.99</label>
-    <input type="radio" name="grey" value="1.99" />
+    <input id="grey" type="radio" name="carpet" value="1.99" />
     <img src="grey.jpg" alt=""/>
   </div>
   <div class="carpet-choice">
     <label for="purple">Purple Carpet $4.99</label>
-    <input type="radio" name="purple" value="4.99" />
+    <input id="purple" type="radio" name="carpet" value="4.99" />
     <img src="purple.jpg" alt=""/>
   </div>
   <div class="carpet-choice">
    <label for="red">Red Carpet $3.99</label>
-    <input type="radio" name="red" value="3.99" />
+    <input id="red" type="radio" name="carpet" value="3.99" />
     <img src="red.jpg" alt=""/>
   </div>
   <div class="carpet-choice">
     <label for="white">White Carpet $2.50</label>
-    <input type="radio" name="white" value="2.50" />
+    <input id="white" type="radio" name="carpet" value="2.50" />
     <img src="white.jpg" alt=""/>
   </div>
        
