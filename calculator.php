@@ -1,3 +1,29 @@
+<?php
+if(isset($_POST['submit1'])){
+  // Get carpet value(price)
+  $carpet = stripslashes($_POST['carpet']);
+  $carpet = mysqli_real_escape_string($carpet);
+  
+  $rooms =  stripslashes($_POST['rooms']);
+  $rooms = mysqli_real_escape_string($rooms);
+  
+  $stairs = stripslashes($_POST['stairs']);
+  $stairs = mysqli_real_escape_string($stairs);
+  
+  $i = 0; 
+  while($i < $rooms){
+    $form .= "<label for=''>Room $i</label><input id='' name='' type='text'/><br/>";  
+    
+  }
+  
+  if($stairs == 'Yes'){
+    $form .= "<label for=''>Room $i</label><input id='' name='' type='text'/><br/>";
+  }
+  
+
+      
+} 
+?>
 <!doctype html>
 <html>
 <head>
@@ -80,30 +106,7 @@
 	<input type="submit" name="submit1" value="Continue">
 </form>
 <?php
-if(isset($_POST['submit1'])){
-  // Get carpet value(price)
-  $carpet = stripslashes($_POST['carpet']);
-  $carpet = mysqli_real_escape_string($carpet);
-  
-  $rooms =  stripslashes($_POST['rooms']);
-  $rooms = mysqli_real_escape_string($rooms);
-  
-  $stairs = stripslashes($_POST['stairs']);
-  $stairs = mysqli_real_escape_string($stairs);
-  
-  $i = 0; 
-  while($i < $rooms){
-    $form .= "<label for=''>Room $i</label><input id='' name='' type='text'/><br/>";  
-    
-  }
-  
-  if($stairs == 'Yes'){
-    $form .= "<label for=''>Room $i</label><input id='' name='' type='text'/><br/>";
-  }
-  
-
-      
-} 
+  echo "$form";
 ?>
 </body>
 </html>
