@@ -1,5 +1,7 @@
 <?php
+$form = 0;
 if(isset($_POST['submit1'])){
+  
   // Get carpet value(price)
   $carpet = stripslashes($_POST['carpet']);
   $carpet = mysqli_real_escape_string($carpet);
@@ -17,11 +19,8 @@ if(isset($_POST['submit1'])){
   }
   
   if($stairs == 'Yes'){
-    $form .= "<label for=''>Room $i</label><input id='' name='' type='text'/><br/>";
-  }
-  
-
-      
+    $form .= "<label for=''>Width of stairway</label><input id='' name='' type='text'/><br/>";
+  }      
 } 
 ?>
 <!doctype html>
@@ -106,7 +105,7 @@ if(isset($_POST['submit1'])){
 	<input type="submit" name="submit1" value="Continue">
 </form>
 <?php
-  echo "$form";
+  echo $form;
 ?>
 </body>
 </html>
