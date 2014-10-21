@@ -81,10 +81,26 @@
 </form>
 <?php
 if(isset($_POST['submit1'])){
+  // Get carpet value(price)
   $carpet = stripslashes($_POST['carpet']);
-  if($_POST['stairs'] == 'Yes'){
-  }
+  
+  // Number of rooms
+  $rooms =  stripslashes($_POST['rooms']);
+  
+  $i = 0; 
+  while($i < $rooms){
+    $form .= "<label for=''>Room $i</label><input id='' name='' type='text'/><br/>";  
     
+  }
+  
+  
+  if($_POST['stairs'] == 'No'){
+    $stairs = FALSE;
+  }
+  else {
+    $stairs = TRUE; 
+  }
+      
 } 
 ?>
 </body>
