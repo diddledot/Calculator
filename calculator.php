@@ -188,7 +188,7 @@ table, th, td{
   <h2 id="logo2">Carpet Calculator</h2>
   
   <div id="left-side" class="column">    
-    <form method="POST" action="carpet1.php">
+    <form method="POST" action="carpet.php">
       <div id="select-carpet">
       
         <h3>Choose Carpet:</h3><hr/>     
