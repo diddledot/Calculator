@@ -4,25 +4,22 @@
 <meta charset="utf-8">
 <title>Carpet Calculator</title>
 <style type="text/css">
-.carpet-choice > input{ /* HIDE RADIO */
-
-}
 .carpet-choice > label{ /* LABELS */
-color: white;
+	color: black;
 }
-.carpet-choice input[type=radio] {
+
+.carpet-choice input[type=radio] { /* Radio button styles */
 	visibility: hidden;
 	position: absolute;
 }
-.carpet-choice > input + img{ /* IMAGE STYLES */
-cursor:pointer;
-border:3px solid transparent;
+
+.carpet-choice label img{ /* IMAGE STYLES */
+	cursor:pointer;
+	border:3px solid transparent;
 }
-.carpet-choice > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-border:2px solid #f00;
-}
+
 .carpet-choice input[type="radio"]:checked + label img {
-border: 3px solid red;
+	border: 3px solid red;
 }
 </style>
 </head>
